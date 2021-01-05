@@ -27,7 +27,7 @@
 }
 ```
 * 在app.vue下style引入运用
-```
+``` html
 <style lang="scss">
 @import './common/l-icon.scss'
 </style>
