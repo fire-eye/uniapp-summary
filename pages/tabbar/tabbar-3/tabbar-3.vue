@@ -4,16 +4,40 @@
 		<view class="tabbar-box-wrap">
 			<view class="tabbar-box">
 				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release')">
-					<image class="box-image" src="../../../static/img/release.png" mode="aspectFit"></image>
-					<text class="explain">发图文</text>
-				</view>
-				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
-					<image class="box-image" src="../../../static/img/video.png" mode="aspectFit"></image>
-					<text class="explain">发视频</text>
+					<view class="tabbar-icon lIcon-map-1" ></view>
+					<text class="explain">地图</text>
 				</view>
 				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
-					<image class="box-image" src="../../../static/img/qa.png" mode="aspectFit"></image>
-					<text class="explain">提问</text>
+					<view class="tabbar-icon lIcon-icon"  style="font-size: 60rpx;"></view>
+					<text class="explain">图标</text>
+				</view>
+				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
+					<view class="tabbar-icon lIcon-rich" ></view>
+					<text class="explain">富文本</text>
+				</view>
+				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+					<view class="tabbar-icon lIcon-chart-1" ></view>
+					<text class="explain">图表</text>
+				</view>
+				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release')">
+					<view class="tabbar-icon lIcon-poster"></view>
+					<text class="explain">海报</text>
+				</view>
+				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
+					<view class="tabbar-icon lIcon-js"></view>
+					<text class="explain">ES6</text>
+				</view>
+				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+					<view class="tabbar-icon lIcon-study" style="font-size: 60rpx;"></view>
+					<text class="explain">uni.request</text>
+				</view>
+				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+					<view class="tabbar-icon lIcon-ts" ></view>
+					<text class="explain">Typescript</text>
+				</view>
+				<view class="tabbar-box-item" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+					<view class="tabbar-icon lIcon-vue"  style="font-size: 80rpx;"></view>
+					<text class="explain">Vue/Vuex</text>
 				</view>
 			</view>
 		</view>
@@ -35,6 +59,7 @@ export default {
 	},
 	onHide() {
 		this.active = false;
+		
 	},
 	methods: {
 		goToPage(url) {
@@ -88,10 +113,12 @@ export default {
 	.tabbar-box {
 		position: relative;
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: stretch;
 		width: 100%;
 		background: #fff;
 		border-radius: 20upx;
-		padding: 15upx 20upx;
+		padding: 15upx 0;
 		box-sizing: border-box;
 		z-index: 2;
 		box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
@@ -123,15 +150,23 @@ export default {
 		}
 		.tabbar-box-item {
 			// position: relative;
-			width: 100%;
+			width: 33.33%;
 			z-index: 3;
-			margin: 10upx;
+			margin: 20upx 0;
 			color: $uni-color-subtitle;
 			text-align: center;
 			font-size: $uni-font-size-base;
 			.box-image {
 				width: 100%;
 				height: $uni-img-size-lg;
+			}
+			.tabbar-icon {
+				font-size: 70rpx;
+				width: auto;
+				height: 80rpx;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 		}
 	}
