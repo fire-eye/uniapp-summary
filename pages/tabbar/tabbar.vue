@@ -3,39 +3,39 @@
 
 		<view class="tabbar-box-wrap">
 			<view class="tabbar-box">
-				<view class="tabbar-box-item" :style="{color: colorRGB}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release')">
+				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release')">
 					<view class="tabbar-icon lIcon-map-1" ></view>
 					<text class="explain">地图</text>
 				</view>
-				<view class="tabbar-box-item"  :style="{color: colorRGB}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+				<view class="tabbar-box-item"  :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
 					<view class="tabbar-icon lIcon-icon"  style="font-size: 60rpx;"></view>
 					<text class="explain">图标</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: colorRGB}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
+				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
 					<view class="tabbar-icon lIcon-rich" ></view>
 					<text class="explain">富文本</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: colorRGB}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
 					<view class="tabbar-icon lIcon-chart-1" ></view>
 					<text class="explain">图表</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: colorRGB}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release')">
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release')">
 					<view class="tabbar-icon lIcon-poster"></view>
 					<text class="explain">海报</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: colorRGB}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
 					<view class="tabbar-icon lIcon-js"></view>
 					<text class="explain">ES6</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: colorRGB}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
 					<view class="tabbar-icon lIcon-study" style="font-size: 60rpx;"></view>
 					<text class="explain">uni.request</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: colorRGB}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
 					<view class="tabbar-icon lIcon-ts" ></view>
 					<text class="explain">Typescript</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: colorRGB}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
 					<view class="tabbar-icon lIcon-vue"  style="font-size: 80rpx;"></view>
 					<text class="explain">Vue/Vuex</text>
 				</view>
@@ -50,18 +50,11 @@ export default {
 		return {
 			active: false,
 			colorText : '',
-			colorRGB : ''
+			color : ''
 		};
 	},
 	onLoad() {
-		let colorArr =  ['blue','red','orange'];
-		let num = parseInt(Math.floor(Math.random() * 211))
-		let numR = (num + 60) > 210 ? 210 :  num + 60
-		let numG = (num + 30) > 210 ? 160 :  num + 30
-		console.log(Math.floor(Math.random() * 211))
-		this.colorText = colorArr[Math.floor(Math.random() * 3)] 
-		this.colorRGB = 'rgb(' + numR +',' +  numG +','+ num +')'
-		console.log(this.colorText,this.colorRGB);
+		this.color = this.randomColor()
 	},
 	onShow() {
 		// setTimeout(() => {
@@ -78,7 +71,17 @@ export default {
 			uni.navigateTo({
 				url
 			});
-		}
+		},
+		randomColor() {
+			let str = '23456789abcd';
+			let arr = '#'
+			for( let i=0; i<6 ; i++) {
+				let randomNum = parseInt(Math.random() * 11)
+				arr += str.charAt(randomNum)
+			}
+			console.log(arr)
+			return arr;
+		},
 	}
 };
 </script>
