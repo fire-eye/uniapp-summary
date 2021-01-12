@@ -84,13 +84,13 @@ align-items属性定义项目在交叉轴上如何对齐。
 * **order: integer;**  
 order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。
 
-* **flex-grow: [number]\; /* default 0 */**  
+* **flex-grow: [number]\; / default 0 /**  
 flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。 
 
-* **flex-shrink: [number]; /* default 1 */**  
+* **flex-shrink: [number]; / default 1 /**  
 flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
 
-* **flex-basis: [length] | auto; /* default auto */**  
+* **flex-basis: [length] | auto; / default auto /**  
 在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
 
 * **flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]**  
