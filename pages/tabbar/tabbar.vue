@@ -39,6 +39,10 @@
 					<view class="tabbar-icon lIcon-vue"  style="font-size: 80rpx;"></view>
 					<text class="explain">Vue/Vuex</text>
 				</view>
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar/flex/flex')">
+					<view class="tabbar-icon lIcon-css3"  style="font-size: 80rpx;"></view>
+					<text class="explain">Flex布局</text>
+				</view>
 			</view>
 		</view>
 	</view>
