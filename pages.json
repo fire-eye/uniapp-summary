@@ -40,6 +40,12 @@
 			"style": {
 				"navigationBarTitleText": "Flex-弹性布局"
 			}
+		},
+		{
+			"path": "pages/tabbar/es6/es6",
+			"style": {
+				"navigationBarTitleText": "ES6汇总"
+			}
 		}
 	],
 	"globalStyle": {
