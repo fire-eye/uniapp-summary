@@ -24,8 +24,10 @@
 			"style": {}
 		},
 		{
-			"path": "pages/tabbar/tabbar-3-release/tabbar-3-release",
-			"style": {}
+			"path": "pages/tabbar/map/map",
+			"style": {
+				"navigationBarTitleText":"地图"
+			}
 		},
 		{
 			"path": "pages/tabbar/tabbar-3-video/tabbar-3-video",
@@ -33,12 +35,20 @@
 		},
 		{
 			"path": "pages/tabbar/tabbar-3-qa/tabbar-3-qa",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "Flex-弹性布局"
+			}
 		},
 		{
 			"path": "pages/tabbar/flex/flex",
 			"style": {
 				"navigationBarTitleText": "Flex-弹性布局"
+			}
+		},
+		{
+			"path": "pages/tabbar/icon/icon",
+			"style": {
+				"navigationBarTitleText": "图标与动画"
 			}
 		}
 	],

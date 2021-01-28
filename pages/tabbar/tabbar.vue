@@ -3,13 +3,13 @@
 
 		<view class="tabbar-box-wrap">
 			<view class="tabbar-box">
-				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release')">
+				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar/map/map')">
 					<view class="tabbar-icon lIcon-map-1" ></view>
 					<text class="explain">地图</text>
 				</view>
-				<view class="tabbar-box-item"  :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+				<view class="tabbar-box-item"  :style="{color: color}" @click="goToPage('/pages/tabbar/icon/icon')">
 					<view class="tabbar-icon lIcon-icon"  style="font-size: 60rpx;"></view>
-					<text class="explain">图标</text>
+					<text class="explain">图标/动画</text>
 				</view>
 				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
 					<view class="tabbar-icon lIcon-rich" ></view>
