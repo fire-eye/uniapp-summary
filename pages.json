@@ -46,9 +46,15 @@
 			}
 		},
 		{
+<<<<<<< HEAD
 			"path": "pages/tabbar/icon/icon",
 			"style": {
 				"navigationBarTitleText": "图标与动画"
+=======
+			"path": "pages/tabbar/es6/es6",
+			"style": {
+				"navigationBarTitleText": "ES6汇总"
+>>>>>>> origin/main
 			}
 		}
 	],

@@ -23,7 +23,7 @@
 					<view class="tabbar-icon lIcon-poster"></view>
 					<text class="explain">海报</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar/es6/es6')">
 					<view class="tabbar-icon lIcon-js"></view>
 					<text class="explain">ES6</text>
 				</view>
