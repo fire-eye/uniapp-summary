@@ -11,11 +11,11 @@
 					<view class="tabbar-icon lIcon-icon"  style="font-size: 60rpx;"></view>
 					<text class="explain">图标/动画</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video')">
+				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar/text-rich/text-rich')">
 					<view class="tabbar-icon lIcon-rich" ></view>
 					<text class="explain">富文本</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar/echat/echat')">
 					<view class="tabbar-icon lIcon-chart-1" ></view>
 					<text class="explain">图表</text>
 				</view>

@@ -30,13 +30,15 @@
 			}
 		},
 		{
-			"path": "pages/tabbar/tabbar-3-video/tabbar-3-video",
-			"style": {}
+			"path": "pages/tabbar/text-rich/text-rich",
+			"style": {
+				"navigationBarTitleText":"富文本"
+			}
 		},
 		{
-			"path": "pages/tabbar/tabbar-3-qa/tabbar-3-qa",
+			"path": "pages/tabbar/echat/echat",
 			"style": {
-				"navigationBarTitleText": "Flex-弹性布局"
+				"navigationBarTitleText": "图表"
 			}
 		},
 		{
@@ -46,15 +48,15 @@
 			}
 		},
 		{
-<<<<<<< HEAD
 			"path": "pages/tabbar/icon/icon",
 			"style": {
 				"navigationBarTitleText": "图标与动画"
-=======
+			}
+		},
+		{
 			"path": "pages/tabbar/es6/es6",
 			"style": {
 				"navigationBarTitleText": "ES6汇总"
->>>>>>> origin/main
 			}
 		}
 	],

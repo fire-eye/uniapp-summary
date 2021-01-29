@@ -1,18 +1,28 @@
 <template>
 	<view class="content">
-		页面 - 提问
+		<view class="es6">
+			图表
+		</view>
 	</view>
 </template>
 
 <script>
 	export default {
 		data() {
-			return {};
+			return {
+				title: 'Hello'
+			}
+		},
+		onLoad() {
+
+		},
+		methods: {
+
 		}
-	};
+	}
 </script>
 
-<style>
+<style>   
 	.content {
 		text-align: center;
 		height: 400upx;
