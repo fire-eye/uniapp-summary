@@ -10,10 +10,7 @@
 					{{animatedArr[index]}}
 				</view>
 			</view>
-
 		</template>
-
-		
 	</view>
 </template>
 
@@ -23,10 +20,11 @@
 			return {
 				iconArr: ['lIcon-chart-1','lIcon-icon','lIcon-study','lIcon-js','lIcon-chart-2','lIcon-component',
 							'lIcon-map-1','lIcon-form','lIcon-browse','lIcon-vue','lIcon-ts','lIcon-ts-2','lIcon-wechat','lIcon-poster','lIcon-rich','lIcon-css3',
+							'lIcon-regx','lIcon-draw', 'lIcon-canvas',
 					],
 				animatedArr : [ 'bounce','flash','pulse','rubberBand','shake','headShake',
 								'swing','tada','wobble','jello','heartBeat','hinge','jackInTheBox',
-								'rollIn','zoomIn','flip']
+								'rollIn','zoomIn','flip','flipInX','lightSpeedIn','flipInY']
 			}
 		},
 		onLoad() {
@@ -44,7 +42,7 @@
 		display: flex;
 		justify-content: start;
 		flex-wrap: wrap;
-		padding: 60rpx;
+		padding: 40rpx;
 		.tabbar-icon {
 			width: 33.33%;
 			height: 100rpx;
@@ -53,6 +51,7 @@
 		}
 		.icon {
 			font-size: 50rpx;
+
 		}
 	}
 </style>

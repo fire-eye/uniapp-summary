@@ -4,12 +4,14 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "推荐 - L·CHUA"
+				"navigationBarTitleText": "推荐"
 			}
 		},
 		{
 			"path": "pages/components/component",
-			"style": {}
+			"style": {
+				"navigationBarTitleText":"案例/组件"
+			}
 		},
 		{
 			"path": "pages/tabbar/tabbar",
@@ -17,7 +19,9 @@
 		},
 		{
 			"path": "pages/form/form",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "表单"
+			}
 		},
 		{
 			"path": "pages/my/my",
@@ -58,11 +62,29 @@
 			"style": {
 				"navigationBarTitleText": "ES6汇总"
 			}
+		},
+		{
+			"path": "pages/tabbar/luck-draw/demo",
+			"style": {
+				"navigationBarTitleText": "抽奖"
+			}
+		},
+		{
+			"path": "pages/tabbar/regexp/regexp",
+			"style": {
+				"navigationBarTitleText": "正则表达式"
+			}
+		},
+		{
+			"path": "pages/tabbar/canvas/canvas",
+			"style": {
+				"navigationBarTitleText": "Canvas"
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "L·CHUA",
+		"navigationBarTitleText": "LEON CHUA",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},

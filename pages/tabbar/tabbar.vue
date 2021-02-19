@@ -3,26 +3,6 @@
 
 		<view class="tabbar-box-wrap">
 			<view class="tabbar-box">
-				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar/map/map')">
-					<view class="tabbar-icon lIcon-map-1" ></view>
-					<text class="explain">地图</text>
-				</view>
-				<view class="tabbar-box-item"  :style="{color: color}" @click="goToPage('/pages/tabbar/icon/icon')">
-					<view class="tabbar-icon lIcon-icon"  style="font-size: 60rpx;"></view>
-					<text class="explain">图标/动画</text>
-				</view>
-				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar/text-rich/text-rich')">
-					<view class="tabbar-icon lIcon-rich" ></view>
-					<text class="explain">富文本</text>
-				</view>
-				<view class="tabbar-box-item" :style="{color: color}" @click="goToPage('/pages/tabbar/echat/echat')">
-					<view class="tabbar-icon lIcon-chart-1" ></view>
-					<text class="explain">图表</text>
-				</view>
-				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release')">
-					<view class="tabbar-icon lIcon-poster"></view>
-					<text class="explain">海报</text>
-				</view>
 				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar/es6/es6')">
 					<view class="tabbar-icon lIcon-js"></view>
 					<text class="explain">ES6</text>
@@ -42,6 +22,14 @@
 				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar/flex/flex')">
 					<view class="tabbar-icon lIcon-css3"  style="font-size: 80rpx;"></view>
 					<text class="explain">Flex布局</text>
+				</view>
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar/regexp/regexp')">
+					<view class="tabbar-icon lIcon-regx"  style="font-size: 75rpx;"></view>
+					<text class="explain">正则表达式</text>
+				</view>
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar/canvas/canvas')">
+					<view class="tabbar-icon lIcon-canvas"  style="font-size: 70rpx;"></view>
+					<text class="explain">Canvas</text>
 				</view>
 			</view>
 		</view>
