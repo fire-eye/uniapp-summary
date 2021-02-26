@@ -1,36 +1,31 @@
 <template>
-	<view class="content">
-		<view class="title-text">
+	<view class="home">
+		<view class="bg-grey padding-sm">
+			<text>
+				Uni-app项目开发中常用组件汇总
+				日常前端开发基础知识汇总
+			</text>
+		</view>
+		<view class="title padding-sm text text-bold bg-gradual-blue">
 			{{title}}
 		</view>
-		<view class="video">
-			<video class="video-box" src="https://www.eme.cn/attachment/online_course/video/20210114/1610592080u9uja.mp4" 
-				@waiting="loading"
-				@timeupdate="timeupdate"
-				 :danmu-list="danmuList"
-				enable-danmu danmu-btn controls
-				>
-				
-			</video>
-<!-- 			<video class="video-box" src="@/static/1610591345o6dt0.mp4">
-				
-			</video> -->
-			<view class="">
-				
-				<view class="uni-list uni-common-mt">
-					<view class="uni-list-cell">
-						<view>
-							<view class="uni-label">弹幕内容</view>
+		<view class="lists">
+			<template v-for="( item, index ) in 6">
+				<view class="list flex padding">
+					<view class="img margin-right-sm">
+						<image src="/static/img/video.png" mode=""></image>
+					</view>
+					<view class="list-content flex-sub">
+						<view class="title">
+							标题 - {{index}}
 						</view>
-						<view class="uni-list-cell-db">
-							<input v-model="danmuValue" class="uni-input" type="text" placeholder="在此处输入弹幕内容" />
+						<view class="desc text-sm text-gray">
+							内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容
 						</view>
 					</view>
 				</view>
-				<view class="uni-btn-v">
-					<button @click="sendDanmu" class="page-body-button">发送弹幕</button>
-				</view>
-			</view>
+			</template>
+			
 		</view>
 	</view>
 </template>
@@ -39,42 +34,10 @@
 export default {
 	data() {
 		return {
-			title: '视频、弹幕',
-			danmuList: [{
-					text: '第 1s 出现的弹幕',
-					color: '#ff0000',
-					time: 1
-				},
-				{
-					text: '第 1.4s 出现的弹幕',
-					color: '#ff0000',
-					time: 1.4
-				},
-				{
-					text: '第 1s 出现的弹幕',
-					color: '#ff0000',
-					time: 2.1
-				},
-				{
-					text: '第 1s 出现的弹幕',
-					color: '#ff0000',
-					time: 2.5
-				},
-				{
-					text: '第 3s 出现的弹幕',
-					color: '#ff00ff',
-					time: 3
-				}
-			],
-			danmuValue: ''
+			title: '最新更新',
 		};
 	},
 	components: {
-	},
-	onReady() {
-		// #ifndef MP-ALIPAY
-		        this.videoContext = uni.createVideoContext('myVideo')
-		        // #endif
 	},
 	onLoad() {
 		
@@ -90,42 +53,27 @@ export default {
 			// console.log(e)
 			uni.hideLoading()
 		},
-		sendDanmu() {
-			this.videoContext.sendDanmu({
-				text: this.danmuValue,
-				color: this.getRandomColor()
-			});
-			this.danmuValue = '';
-		},
-		videoErrorCallback: function(e) {
-		            uni.showModal({
-		                content: e.target.errMsg,
-		                showCancel: false
-		            })
-		        },
-		        getRandomColor: function() {
-		            const rgb = []
-		            for (let i = 0; i < 3; ++i) {
-		                let color = Math.floor(Math.random() * 256).toString(16)
-		                color = color.length == 1 ? '0' + color : color
-		                rgb.push(color)
-		            }
-		            return '#' + rgb.join('')
-		        }
 	}
 };
 </script>
 
 <style lang="scss">
-.content {
-	text-align: center;
-	.title-text {
-		font-size: 32rpx;
-		margin: 30rpx 0;
-	}
-	.video-box {
-		width: 100%;
-		height: 430rpx;
+.home {
+	
+	.lists {
+		background-color: #fff;
+		.list {
+			border-bottom: 1rpx solid #dedede;
+			line-height: 46rpx;
+		}
+		.img {
+			width: 140rpx;
+			height: 140rpx;
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
 	}
 }
 </style>

@@ -1,6 +1,13 @@
 <template>
 	<view class="content">
-		页面 - 5
+		<view class="title">
+			你好！Leon Chua
+		</view>
+		<view class="">
+			<text>
+				www.caishuhua.com
+			</text>
+		</view>
 	</view>
 </template>
 

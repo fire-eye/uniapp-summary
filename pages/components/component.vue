@@ -44,9 +44,9 @@
 <style lang="scss" scoped>
 .content {
 	.list {
-		width: 100%;
+		width: 93%;
 		display: flex;
-		padding: 30rpx;
+		padding: 3.5%;
 		border-bottom: 1rpx solid #dedede;
 		.img {
 			margin-right: 30rpx;

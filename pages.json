@@ -4,13 +4,19 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "推荐"
+				"navigationBarTitleText": "蔡淑华的博客"
 			}
 		},
 		{
 			"path": "pages/components/component",
 			"style": {
 				"navigationBarTitleText":"案例/组件"
+			}
+		},
+		{
+			"path": "pages/components/qrcode",
+			"style": {
+				"navigationBarTitleText":"二维码"
 			}
 		},
 		{
@@ -80,13 +86,22 @@
 			"style": {
 				"navigationBarTitleText": "Canvas"
 			}
+		},
+		{
+			"path": "pages/tabbar/video/video",
+			"style": {
+				"navigationBarTitleText": "视频"
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "LEON CHUA",
+		"navigationBarTitleText": "蔡淑华的博客",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		// #ifdef H5
+		"navigationStyle" : "custom"
+		// #endif	
 	},
 	"tabBar": {
 		"borderStyle": "black",

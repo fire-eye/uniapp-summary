@@ -14,7 +14,7 @@ const lists = [
 	},
 	{
 		title : '富文本',
-		desc : '简介',
+		desc : '多端兼容富文本组件,支持图片预览、视频播放、表格渲染等',
 		link : '/pages/tabbar/text-rich/text-rich',
 		icon : 'lIcon-rich'
 	},
@@ -31,11 +31,22 @@ const lists = [
 		icon : 'lIcon-poster'
 	},
 	{
+		title : '视频',
+		desc : '视屏功能应用案例,包含弹幕与弹幕发布',
+		link : '/pages/tabbar/video/video',
+		icon : 'lIcon-draw'
+	},
+	{
 		title : '抽奖',
 		desc : '简介',
 		link : '/pages/tabbar/luck-draw/demo',
 		icon : 'lIcon-draw'
-		
+	},
+	{
+		title : '二维码',
+		desc : '二维码生成，支持内容、图标、大小设置',
+		link : '/pages/components/qrcode',
+		icon : 'lIcon-draw'
 	}
 	
 ]

@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import './common/main.css';
 @import './common/l-icon.scss';
 @import './common/animated.scss';
 </style>
