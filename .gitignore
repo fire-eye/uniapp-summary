@@ -1,0 +1,14 @@
+.env
+.git
+.svn
+.idea
+.vscode
+*.log
+/runtime
+/vendor
+/safefile
+/nbproject
+/composer.lock
+/public/upload
+/h5/unpackage/dist/dev
+.hbuilderx
