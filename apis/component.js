@@ -46,7 +46,13 @@ const lists = [
 		title : '二维码',
 		desc : '二维码生成，支持内容、图标、大小设置',
 		link : '/pages/components/qrcode',
-		icon : 'lIcon-draw'
+		icon : 'lIcon-icon'
+	},
+	{
+		title : '日历',
+		desc : '可以查看日期，选择任意范围内的日期，打点操作。常用场景如：酒店日期预订、火车机票选择购买日期、上下班打卡等。',
+		link : '/pages/components/calendar',
+		icon : 'lIcon-icon'
 	}
 	
 ]

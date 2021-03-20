@@ -20,6 +20,12 @@
 			}
 		},
 		{
+			"path": "pages/components/calendar",
+			"style": {
+				"navigationBarTitleText":"日历"
+			}
+		},
+		{
 			"path": "pages/tabbar/tabbar",
 			"style": {}
 		},
