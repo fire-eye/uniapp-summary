@@ -6,13 +6,16 @@
 					<view class="img">
 						<view class="icon" :class="list.icon"></view>
 					</view>
-					<view class="content">
+					<view class="content flex-sub">
 						<view class="title">
 							{{list.title}}
 						</view>
 						<view class="desc">
 							{{list.desc}}
 						</view>
+					</view>
+					<view class="lIcon-arrow-right">
+						
 					</view>
 				</view>
 			</navigator>
@@ -44,7 +47,7 @@
 <style lang="scss" scoped>
 .content {
 	.list {
-		width: 93%;
+		width: 100%;
 		display: flex;
 		padding: 3.5%;
 		border-bottom: 1rpx solid #dedede;
