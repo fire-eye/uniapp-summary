@@ -15,7 +15,7 @@
 					<view class="tabbar-icon lIcon-ts" ></view>
 					<text class="explain">Typescript</text>
 				</view>
-				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar/vue/vue')">
 					<view class="tabbar-icon lIcon-vue"  style="font-size: 80rpx;"></view>
 					<text class="explain">Vue/Vuex</text>
 				</view>
