@@ -112,6 +112,12 @@
 			}
 		},
 		{
+			"path": "pages/tabbar/vue/components-dynamic",
+			"style": {
+				"navigationBarTitleText": "动态组件"
+			}
+		},
+		{
 			"path": "pages/tabbar/vue/vuex",
 			"style": {
 				"navigationBarTitleText": "VUE状态管理"
