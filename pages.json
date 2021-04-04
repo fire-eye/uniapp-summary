@@ -40,19 +40,19 @@
 			"style": {}
 		},
 		{
-			"path": "pages/tabbar/map/map",
+			"path": "pages/components/map/map",
 			"style": {
 				"navigationBarTitleText":"地图"
 			}
 		},
 		{
-			"path": "pages/tabbar/text-rich/text-rich",
+			"path": "pages/components/text-rich/text-rich",
 			"style": {
 				"navigationBarTitleText":"富文本"
 			}
 		},
 		{
-			"path": "pages/tabbar/echat/echat",
+			"path": "pages/components/echat/echat",
 			"style": {
 				"navigationBarTitleText": "图表"
 			}
@@ -64,7 +64,7 @@
 			}
 		},
 		{
-			"path": "pages/tabbar/icon/icon",
+			"path": "pages/components/icon/icon",
 			"style": {
 				"navigationBarTitleText": "图标与动画"
 			}
@@ -76,7 +76,7 @@
 			}
 		},
 		{
-			"path": "pages/tabbar/luck-draw/demo",
+			"path": "pages/components/luck-draw/demo",
 			"style": {
 				"navigationBarTitleText": "抽奖"
 			}
@@ -88,15 +88,33 @@
 			}
 		},
 		{
-			"path": "pages/tabbar/canvas/canvas",
+			"path": "pages/components/canvas/canvas",
 			"style": {
 				"navigationBarTitleText": "Canvas"
 			}
 		},
 		{
-			"path": "pages/tabbar/video/video",
+			"path": "pages/components/video/video",
 			"style": {
 				"navigationBarTitleText": "视频"
+			}
+		},
+		{
+			"path": "pages/tabbar/vue/vue",
+			"style": {
+				"navigationBarTitleText": "VUE教程"
+			}
+		},
+		{
+			"path": "pages/tabbar/vue/components",
+			"style": {
+				"navigationBarTitleText": "组件插槽分发内容"
+			}
+		},
+		{
+			"path": "pages/tabbar/vue/vuex",
+			"style": {
+				"navigationBarTitleText": "VUE状态管理"
 			}
 		}
 	],
