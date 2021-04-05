@@ -7,11 +7,12 @@
 			</text>
 		</view>
 		<view class="title padding-sm text text-bold bg-gradual-blue">
-			{{title}}
+			{{title}} 
 		</view>
+
 		<view class="lists">
 			<template v-for="( item, index ) in 6">
-				<view class="list flex padding">
+				<view class="list flex padding" :key="index">
 					<view class="img margin-right-sm">
 						<image src="/static/img/video.png" mode=""></image>
 					</view>
@@ -35,12 +36,19 @@ export default {
 	data() {
 		return {
 			title: '最新更新',
+			
 		};
 	},
 	components: {
 	},
 	onLoad() {
+		let t=this;
 		
+		console.log(this.numArr.filter( (item,index) =>{
+			console.log(item,index)
+
+			return item.num == 5;
+		}))
 	},
 	methods: {
 		loading(e){
@@ -53,6 +61,7 @@ export default {
 			// console.log(e)
 			uni.hideLoading()
 		},
+		
 	}
 };
 </script>

@@ -122,6 +122,12 @@
 			"style": {
 				"navigationBarTitleText": "VUE状态管理"
 			}
+		},
+		{
+			"path": "pages/tabbar/vue/set-delete",
+			"style": {
+				"navigationBarTitleText": "$set和$delete使用技巧"
+			}
 		}
 	],
 	"globalStyle": {
