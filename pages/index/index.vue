@@ -2,8 +2,8 @@
 	<view class="home">
 		<view class="bg-grey padding-sm">
 			<text>
-				Uni-app项目开发中常用组件汇总
-				日常前端开发基础知识汇总
+				Uni-app项目开发中组件汇总
+				前端开发知识汇总
 			</text>
 		</view>
 		<view class="title padding-sm text text-bold bg-gradual-blue">
@@ -11,20 +11,25 @@
 		</view>
 
 		<view class="lists">
-			<template v-for="( item, index ) in 6">
-				<view class="list flex padding" :key="index">
-					<view class="img margin-right-sm">
-						<image src="/static/img/video.png" mode=""></image>
-					</view>
-					<view class="list-content flex-sub">
-						<view class="title">
-							标题 - {{index}}
+			<template v-for="( item, index ) in apiData.lists">
+				<navigator :url="item.link" open-type="navigate" :key="index">
+					<view class="list flex padding" :key="index">
+						<view class="list-index text-xxxl text-white bg-gradual-blue radius text-bold flex justify-center align-center margin-right-sm">
+							{{index}}
 						</view>
-						<view class="desc text-sm text-gray">
-							内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容
+						<view class="list-content flex-sub">
+							<view class="title text-bold">
+								{{item.title}}
+							</view>
+							<view class="desc text-sm text-gray">
+								{{item.desc}}
+							</view>
+						</view>
+						<view class="lIcon-arrow-right flex justify-center align-center text-xxl">
+							
 						</view>
 					</view>
-				</view>
+				</navigator>
 			</template>
 			
 		</view>
@@ -32,10 +37,12 @@
 </template>
 
 <script>
+import apiData from "@/apis/component.js"
 export default {
 	data() {
 		return {
 			title: '最新更新',
+			apiData ,
 			
 		};
 	},
@@ -43,12 +50,6 @@ export default {
 	},
 	onLoad() {
 		let t=this;
-		
-		console.log(this.numArr.filter( (item,index) =>{
-			console.log(item,index)
-
-			return item.num == 5;
-		}))
 	},
 	methods: {
 		loading(e){
@@ -66,22 +67,21 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .home {
 	
 	.lists {
 		background-color: #fff;
 		.list {
 			border-bottom: 1rpx solid #dedede;
-			line-height: 46rpx;
+			line-height: 40rpx;
+			.list-index {
+				width: 120rpx;
+				height: 120rpx;
+			}
 		}
 		.img {
-			width: 140rpx;
-			height: 140rpx;
-			image {
-				width: 100%;
-				height: 100%;
-			}
+			
 		}
 	}
 }
