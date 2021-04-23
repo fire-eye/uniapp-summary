@@ -11,6 +11,10 @@
 					<view class="tabbar-icon lIcon-study" style="font-size: 60rpx;"></view>
 					<text class="explain">uni.request</text>
 				</view>
+				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar/javascript/index')">
+					<view class="tabbar-icon lIcon-ts" ></view>
+					<text class="explain">Javascript</text>
+				</view>
 				<view class="tabbar-box-item" :style="{color: color}"  @click="goToPage('/pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa')">
 					<view class="tabbar-icon lIcon-ts" ></view>
 					<text class="explain">Typescript</text>

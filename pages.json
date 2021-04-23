@@ -128,6 +128,12 @@
 			"style": {
 				"navigationBarTitleText": "$set和$delete使用技巧"
 			}
+		},
+		{
+			"path": "pages/tabbar/javascript/index",
+			"style": {
+				"navigationBarTitleText": "javascript必学知识"
+			}
 		}
 	],
 	"globalStyle": {
