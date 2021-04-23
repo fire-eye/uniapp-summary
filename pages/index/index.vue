@@ -42,13 +42,7 @@ export default {
 	components: {
 	},
 	onLoad() {
-		let t=this;
-		
-		console.log(this.numArr.filter( (item,index) =>{
-			console.log(item,index)
 
-			return item.num == 5;
-		}))
 	},
 	methods: {
 		loading(e){
