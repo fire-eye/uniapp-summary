@@ -10,18 +10,18 @@
 			{{title}} 
 		</view>
 
-		<view class="lists">
-			<template v-for="( item, index ) in 6">
-				<view class="list flex padding" :key="index">
-					<view class="img margin-right-sm">
-						<image src="/static/img/video.png" mode=""></image>
+		<view class="lists" v-if="lists">
+			<template v-for="( item, index ) in lists">
+				<view class="list flex padding-sm" :key="index">
+					<view class="flex justify-center align-center img margin-right-sm bg-gradual-blue text-xxxl radius">
+						{{index + 1}}
 					</view>
 					<view class="list-content flex-sub">
 						<view class="title">
-							标题 - {{index}}
+							{{item.title}}
 						</view>
 						<view class="desc text-sm text-gray">
-							内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容
+							{{item.desc}}
 						</view>
 					</view>
 				</view>
@@ -32,17 +32,19 @@
 </template>
 
 <script>
+	import apiData from "@/apis/component.js"
 export default {
 	data() {
 		return {
 			title: '最新更新',
-			
+			lists : ''
 		};
 	},
 	components: {
 	},
 	onLoad() {
-
+		this.lists = apiData.lists;
+		console.log('apiData',apiData.title, apiData)
 	},
 	methods: {
 		loading(e){
@@ -67,11 +69,11 @@ export default {
 		background-color: #fff;
 		.list {
 			border-bottom: 1rpx solid #dedede;
-			line-height: 46rpx;
+			line-height: 32rpx;
 		}
 		.img {
-			width: 140rpx;
-			height: 140rpx;
+			width: 80rpx;
+			height: 80rpx;
 			image {
 				width: 100%;
 				height: 100%;

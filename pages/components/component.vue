@@ -14,9 +14,12 @@
 							{{list.desc}}
 						</view>
 					</view>
-					<view class="lIcon-arrow-right">
-						
+					<view class="flex align-center">
+						<view class="lIcon-arrow-right">
+							
+						</view>
 					</view>
+					
 				</view>
 			</navigator>
 

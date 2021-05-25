@@ -100,6 +100,12 @@
 			}
 		},
 		{
+			"path": "pages/components/region",
+			"style": {
+				"navigationBarTitleText": "省市区联动选择器"
+			}
+		},
+		{
 			"path": "pages/tabbar/vue/vue",
 			"style": {
 				"navigationBarTitleText": "VUE教程"
@@ -136,6 +142,12 @@
 			}
 		}
 	],
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    "^csh-(.*)": "@/components/csh/csh-$1.vue" // 匹配components目录内的vue文件
+	  }
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "蔡淑华的博客",

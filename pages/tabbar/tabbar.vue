@@ -51,15 +51,20 @@ export default {
 	},
 	onLoad() {
 		this.color = this.randomColor()
+		console.log('on load')
+	},
+	onReady() {
+		console.log('on ready')
 	},
 	onShow() {
 		// setTimeout(() => {
 		this.active = true;
 		// }, 500);
+		console.log('tabbar show')
 	},
 	onHide() {
 		this.active = false;
-		
+		console.log('tabbar hidden')
 	},
 	methods: {
 		goToPage(url) {
